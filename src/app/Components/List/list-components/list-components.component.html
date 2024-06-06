@@ -1,0 +1,19 @@
+<div>
+    <h2>Departamentos</h2>
+    <ul>
+        <li *ngFor =" let item of items"  (click)="getcities(item.id)" >
+            {{item.name}}
+        </li>
+        
+    </ul>
+</div>
+
+<div>
+    <h2>Ciudades</h2>
+    <ul>
+        <li *ngFor =" let itemc of itemscities" >
+            {{itemc.name}}
+        </li>
+        
+    </ul>
+</div>

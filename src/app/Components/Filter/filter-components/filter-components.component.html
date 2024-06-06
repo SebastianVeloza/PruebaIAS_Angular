@@ -1,0 +1,10 @@
+<form [formGroup]="myForm" (ngSubmit)="onsubmit()">
+    <div>
+      <label>id:</label>
+      <input type="number" formControlName="id">
+      <div *ngIf="f.id.invalid && (f.id.dirty || f.id.touched)">
+        <div *ngIf="f.id.errors.required">idDepartment is required.</div>
+      </div>
+    </div>
+    <button type="submit" [disabled]="myForm.invalid">Submit</button>
+ </form>
